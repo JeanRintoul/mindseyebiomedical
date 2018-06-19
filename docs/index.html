@@ -64,6 +64,205 @@
         </div>
       </div>
     </header> -->
+    <!-- Portfolio Grid -->
+    <section class="bg-dark" id="portfolio">
+      <div class="container">
+
+<div id='product-component-5947dc64e4f'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'mindseyebiomedical.myshopify.com',
+      apiKey: '2573721144bfa9e686338c1842697265',
+      appId: '6',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [1498426081338],
+        node: document.getElementById('product-component-5947dc64e4f'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "buttonDestination": "checkout",
+    "layout": "horizontal",
+    "variantId": "all",
+    "width": "100%",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "description": true,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "PRE ORDER"
+    },
+    "styles": {
+      "product": {
+        "text-align": "left",
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "background-color": "#579bb6",
+        ":hover": {
+          "background-color": "#4e8ca4"
+        },
+        ":focus": {
+          "background-color": "#4e8ca4"
+        }
+      },
+      "variantTitle": {
+        "color": "#ffffff"
+      },
+      "title": {
+        "font-size": "26px",
+        "color": "#ffffff"
+      },
+      "description": {
+        "color": "#ffffff"
+      },
+      "price": {
+        "font-size": "18px",
+        "color": "#ffffff"
+      },
+      "compareAt": {
+        "font-size": "15px",
+        "color": "#ffffff"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "styles": {
+      "button": {
+        "background-color": "#579bb6",
+        ":hover": {
+          "background-color": "#4e8ca4"
+        },
+        ":focus": {
+          "background-color": "#4e8ca4"
+        }
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "background-color": "#579bb6",
+        ":hover": {
+          "background-color": "#4e8ca4"
+        },
+        ":focus": {
+          "background-color": "#4e8ca4"
+        }
+      }
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#579bb6",
+        ":hover": {
+          "background-color": "#4e8ca4"
+        },
+        ":focus": {
+          "background-color": "#4e8ca4"
+        }
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="community">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12 text-center">
+
+        <h2 class="section-heading text-uppercase">Open Biomedical Imaging</h2>
+            <h3 class="section-subheading text-muted">We support open software and have pioneered the Open EIT software project on Github. 
+            </h3>
+            <h5>
+          <form action="http://groups.google.com/group/OpenBiomedicalImaging/boxsubscribe">
+                <h4 class="section-subheading text-muted">Subscribe to our Mailing List Community:</h4>
+                <input type="text" name="email">
+                <input type="submit" name="sub" value="Subscribe">
+          </form>
+            </h5>
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://github.com/openeit">OpenEIT on Github</a>
+
+        </div>
+      </div>
+
+      </div>
+    </section> 
+
 
     <!-- Portfolio Grid -->
     <section class="bg-dark" id="portfolio">
@@ -71,7 +270,7 @@
 
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Products</h2>
+            <h2 class="section-heading text-uppercase">Other Items</h2>
             <h3 class="section-subheading text-muted">In Electrical Impedance Tomography</h3>
           </div>
         </div>
@@ -128,30 +327,6 @@
 
 
 
-    <!-- Services -->
-    <section id="community">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-12 text-center">
-
-        <h2 class="section-heading text-uppercase">Open EIT Software</h2>
-            <h3 class="section-subheading text-muted">We support open software and have pioneered the Open EIT software project on Github. 
-            </h3>
-            <h5>
-          <form action="http://groups.google.com/group/OpenBiomedicalImaging/boxsubscribe">
-                <h4 class="section-subheading text-muted">Subscribe to our Mailing List Community:</h4>
-                <input type="text" name="email">
-                <input type="submit" name="sub" value="Subscribe">
-          </form>
-            </h5>
-            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://github.com/openeit">OpenEIT on Github</a>
-
-        </div>
-      </div>
-
-      </div>
-    </section> 
 
     <!-- Services -->
     <section id="services">
